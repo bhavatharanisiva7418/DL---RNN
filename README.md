@@ -46,8 +46,9 @@ from torch.utils.data import DataLoader, TensorDataset
 
 ## Step 1: Load and Preprocess Data
 # Load training and test datasets
-df_train = pd.read_csv('trainset.csv')
-df_test = pd.read_csv('testset.csv')
+df_train = pd.read_csv(r"C:\Users\admin\Downloads\trainset.csv")
+df_test = pd.read_csv(r"C:\Users\admin\Downloads\testset.csv")
+
 
 # Use closing prices
 train_prices = df_train['Close'].values.reshape(-1, 1)
